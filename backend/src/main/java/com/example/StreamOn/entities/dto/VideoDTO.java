@@ -1,12 +1,23 @@
 package com.example.StreamOn.entities.dto;
 
-public class ContentDTO {
+public class VideoDTO {
     private Long id;
     private String title;
     private String description;
-    private String category;
-    private boolean isAvailable;
+    private String url;
 
+    public VideoDTO(Long id, String title, String description, String url) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.url = url;
+    }
+
+    public VideoDTO() {
+
+    }
+
+    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -31,19 +42,12 @@ public class ContentDTO {
         this.description = description;
     }
 
-    public String getCategory() {
-        return category;
+    public String getUrl() {
+        return url;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public boolean isAvailable() {
-        return isAvailable;
-    }
-
-    public void setAvailable(boolean available) {
-        isAvailable = available;
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
+

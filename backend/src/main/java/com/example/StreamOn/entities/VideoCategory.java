@@ -18,4 +18,5 @@ public class VideoCategory implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long categoryId;
+    private Long videoId;
 }
